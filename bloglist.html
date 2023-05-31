@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- TODO: Include Font Awesome file here -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+
+  <!-- TODO: Include Google Fonts file here -->
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet" />
+
+  <!-- Include Css File  -->
+  <link rel="stylesheet" href="/css/bloglist.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <!-- Script File -->
+  <script src="/scripts/bloglist.js"></script>
+  <script src="https://kit.fontawesome.com/6d8bed1080.js" crossorigin="anonymous"></script>
+  <!--Bootstrap JavaScript Libraries-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+  <!--Font Awsome Scripts-->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- bootstrap script -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="body">
+  <!-- Header Part -->
+  <div>
+    <!-- Header Part -->
+    <div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo-title">
+            <span class="navbar-brand">ScriBBler</span>
+            <br />
+            <span class="logo-tag" style="color: white">Explore Imagine Create</span>
+          </div>
+
+          <div class="justify-content-end" id="navbarNav">
+            <button type="button" class="btn" style="color: white; background-color: blue" data-toggle="modal"
+              data-target="#signinModal" data-backdrop="static" data-keyboard="false">
+              Sign In
+            </button>
+
+            <button type="button" class="btn" style="color: white; background-color: blue" data-toggle="modal"
+              data-target="#signupModal" data-backdrop="static" data-keyboard="false">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Signin modal -->
+      <!-- modal on Sigin In Button click -->
+      <!-- Modal -->
+      <div class="modal fade" id="signinModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+          <!-- Modal content-->
+          <div class="modal-content modal-font">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h2 class="modal-title text-center modal-font">
+                Welcome Back!
+              </h2>
+              <hr />
+
+              <div class="modal-body">
+                <form style="margin: 15px">
+                  <div class="form-group" style="font-family: Josefin Sans">
+                    <label for="exampleInputEmail1 ">Username</label>
+                    <input type="text" class="form-control" id="exampleInputloginEmail1" required="true"
+                      style="background-color: rgb(223, 215, 215)" aria-describedby="emailHelp"
+                      placeholder="Enter Username" />
+                  </div>
+                  <div class="form-group" style="font-family: Josefin Sans">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputloginPassword" required="true" style="
+                          background-color: rgb(223, 215, 215);
+                          font-family: Josefin Sans;
+                        " placeholder="Enter Password" />
+                  </div>
+
+                  <button type="submit" class="btn btn-default btn-block"
+                    style="background-color: #0ec038; color: white">
+                    Sign In
+                  </button>
+                  <div>
+                    <h4 class="text-center" style="padding: 5px; font-family: Josefin Sans">
+                      Not a member?
+                      <span style="color: blue" data-toggle="modal" data-target="#signupModal" data-backdrop="static"
+                        data-keyboard="false">Sign Up</span>
+                    </h4>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup modal -->
+      <!-- modal on Sign Up Button click -->
+      <!-- Modal -->
+      <div class="modal fade" id="signupModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+          <!-- Modal content-->
+          <div class="modal-content modal-font">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h2 class="modal-title text-center">Get Started</h2>
+              <hr />
+
+              <div class="modal-body">
+                <form style="margin: 15px">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Full Name</label>
+                    <input type="text" class="form-control" id="exampleInputName" required="true"
+                      style="background-color: rgb(223, 215, 215)" aria-describedby="emailHelp"
+                      placeholder="Enter Full Name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" class="form-control" id="exampleInputEmail" required="true"
+                      style="background-color: rgb(223, 215, 215)" aria-describedby="emailHelp"
+                      placeholder="Enter Username" />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword" required="true"
+                      style="background-color: rgb(223, 215, 215)" placeholder="Enter Password" />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputcPassword" required="true"
+                      style="background-color: rgb(223, 215, 215)" placeholder="Confirm Password" />
+                  </div>
+
+                  <button type="submit" class="btn btn-default btn-block" required="true"
+                    style="background-color: #0ec038; color: white">
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End Part -->
+
+    <!-- Post Section -->
+    <div class="ListOfPost container">
+      <div class="row featurette">
+        <!--Post 1 starts-->
+        <div class="col-lg-6">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Jimi</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true"></i>
+              </span>
+              <p class="postTitle">Post 1</p>
+              <p class="postDesccription">
+                Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                variable of any type (datatype) in JavaScript.
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail"></i></span>
+            </div>
+          </div>
+        </div>
+        <!--Post 1 ends-->
+
+        <!--Post 2 starts-->
+        <div class="col-lg-6">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Jimi</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true"></i></span>
+              <p class="postTitle">Post 2</p>
+              <p class="postDesccription">
+                One of the biggest challenges in software development is time.
+                It’s something we can’t easily get more of, but linting can
+                help us make the most out of the time we have.
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail"></i></span>
+            </div>
+          </div>
+        </div>
+        <!--Post 2 ends-->
+      </div>
+
+      <div class="row featurette">
+        <!--Post 3 starts-->
+        <div class="col-lg-6">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Jimi</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true"></i></span>
+              <p class="postTitle">Post 3</p>
+              <p class="postDesccription">
+                If you're a developer with a Twitter account, you've already
+                seen everyone and their cat start a blog, YouTube channel, or
+                Patreon.
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail"></i></span>
+            </div>
+          </div>
+        </div>
+        <!--Post 3 ends-->
+
+        <!--Post 4 starts-->
+        <div class="col-lg-6">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Jimi</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true"></i></span>
+              <p class="postTitle">Post 4</p>
+              <p class="postDesccription">
+                When code is not describable using words, most people have to
+                do some mental mapping to turn it in to words.
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail"></i></span>
+            </div>
+          </div>
+        </div>
+        <!--Post 4 ends-->
+      </div>
+
+      <div class="row featurette">
+        <!--Post 5 starts-->
+        <div class="col-lg-12">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Jimi</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true"></i></span>
+              <p class="postTitle">Post 5</p>
+              <p class="postDesccription">
+                Since JavaScript does not have any type-checking, these
+                keywords be used
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail"></i></span>
+            </div>
+          </div>
+        </div>
+        <!--Post 5 ends-->
+      </div>
+    </div>
+    <!-- Post Section -->
+
+    <!-- Modal Delete  Start-->
+
+    <div class="modal fade" id="DeleteModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div style="padding: 15px">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h5 class="modal-title w-100 text-center" id="exampleModalLongTitle">
+              Are you sure you want to delete this post?
+            </h5>
+          </div>
+
+
+
+          <div class="modal-footer ">
+            <div class=" text-center">
+
+              <button type="button" class="btn btn-danger" style="padding: 15px; width: 150px">
+                Yes
+              </button>
+
+              <!-- No -->
+
+              <button type="button" class="btn btn-success" data-dismiss="modal" style="padding: 15px; width: 150px">
+                No
+              </button>
+            </div>
+
+
+            <!-- No -->
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Delete  Start-->
+  <!-- end div -->
+  </div>
+</body>
+
+</html>
