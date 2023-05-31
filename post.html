@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <!-- Include Css File  -->
+    <link rel="stylesheet" href="/css/post.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <!-- Script File -->
+    <script src="/scripts/post.js"></script>
+    <!-- bootstrap script -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="bg">
+        <!-- Header Part -->
+        <div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="logo-title">
+                        <span class="navbar-brand">ScriBBler</span>
+                        <br />
+                        <span class="logo-tag">Explore Imagine Create</span>
+                    </div>
+                    <div class="justify-content-end" id="navbarNav">
+                        <button type="button" class="btn" style="color: white; background-color: blue"
+                            data-toggle="modal" data-target="#signinModal" data-backdrop='static' data-keyboard='false'>
+                            Sign In
+                        </button>
+
+                        <button type="button" class="btn" style="color: white; background-color: blue"
+                            data-toggle="modal" data-target="#signupModal" data-backdrop='static' data-keyboard='false'>
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <!-- Signin modal -->
+            <!-- modal on Sigin In Button click -->
+            <!-- Modal -->
+            <div class="modal fade" id="signinModal" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
+                    <!-- Modal content-->
+                    <div class="modal-content modal-font">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                            <h2 class="modal-title text-center modal-font">Welcome Back!</h2>
+                            <hr>
+                            <div class="modal-body">
+                                <form style="margin: 15px;">
+                                    <div class="form-group " style="font-family: Josefin Sans">
+                                        <label for="exampleInputEmail1 ">Username</label>
+                                        <input type="text" class="form-control" id="exampleInputloginEmail1"
+                                            required="true" style="background-color: rgb(223, 215, 215);"
+                                            aria-describedby="emailHelp" placeholder="Enter Username">
+                                    </div>
+                                    <div class="form-group " style="font-family: Josefin Sans">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputloginPassword"
+                                            required="true"
+                                            style="background-color: rgb(223, 215, 215);font-family: Josefin Sans"
+                                            placeholder="Enter Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn-block"
+                                        style="background-color: #0ec038; color: white;">
+                                        Sign In
+                                    </button>
+                                    <div>
+                                        <h4 class="text-center" style="padding: 5px;font-family: Josefin Sans">Not a
+                                            member?
+                                            <span style="color: blue;" data-toggle="modal" data-target="#signupModal"
+                                                data-backdrop='static' data-keyboard='false'>Sign Up</span>
+                                        </h4>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup modal -->
+            <!-- modal on Sign Up Button click -->
+            <!-- Modal -->
+            <div class="modal fade" id="signupModal" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
+                    <!-- Modal content-->
+                    <div class="modal-content modal-font">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                            <h2 class="modal-title text-center">Get Started</h2>
+                            <hr>
+                            <div class="modal-body">
+                                <form style="margin: 15px;">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Full Name</label>
+                                        <input type="text" class="form-control" id="exampleInputName" required="true"
+                                            style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                                            placeholder="Enter Full Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Username</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail" required="true"
+                                            style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                                            placeholder="Enter Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword"
+                                            required="true" style="background-color: rgb(223, 215, 215);"
+                                            placeholder="Enter Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Confirm Password</label>
+                                        <input type="password" class="form-control" id="exampleInputcPassword"
+                                            required="true" style="background-color: rgb(223, 215, 215);"
+                                            placeholder="Confirm Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn-block" required="true"
+                                        style="background-color: #0ec038; color: white;">
+                                        Sign Up
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End Part -->
+
+        <!-- Creating post section -->
+        <div id="postSection">
+            <h1 id="titletext">The legacy of Jimi Hendrix</h1>
+            <div style="display: block;height: 70px;"> <span>
+                    <p id="name" style="float: left;font-family: Satisfy;font-size: 28px;">Jimi</p>
+                    <button type="button" class="btn btn-danger" id="edit" onclick="postEdit()"
+                        style="float: right;">Edit <i class="fa fa-edit"></i></button>
+                </span></div>
+            <br />
+            <div>
+
+                <p id="paraText">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1]
+                    Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever
+                    ventured before. His boundless drive, technical ability and creative application of such effects as
+                    distortion forever transformed the sound of rock and roll. While creating his unique musical voice
+                    and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock,
+                    American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored over driven
+                    amplifiers with high volume and gain.[119] He was instrumental in developing the previously
+                    undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah
+                    pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most
+                    guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this
+                    technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of
+                    chords while also playing melody. This method has been described as piano style, with the thumb
+                    playing what a pianist's left hand would play and the other fingers playing melody as a right
+                    hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords
+                    and lead lines together, giving the audio impression that more than one guitarist was
+                    performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock
+                    music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of
+                    the instrument as an electronic sound source. Players before him had experimented with feedback and
+                    distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every
+                    bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there
+                    are but two eras � before Hendrix and after Hendrix."
+                </p>
+            </div>
+            <div class="likeCommentSection">
+                <div class="likeBlogButton">
+                    <button type="button" class="btn btn-danger" id="likeBlog" onclick="postLiked()"><i
+                            class="fa fa-thumbs-up" aria-hidden="true"></i> Like</button>
+                    <h5 style="font-family: sans-serif;font-weight: 300;" id="likeCount">Be the first one to like this!
+                    </h5>
+                </div>
+                <br />
+                <textarea id="userComments" placeholder="Leave a comment..." value="" rows="4" cols="100"></textarea>
+                <br />
+                <button type="button" class="btn btn-danger" id="addList"
+                    onclick="addComments(userComments)">Comment</button>
+                <h2 style="font-style: bold;font-size: 18px;">All Comments</h2>
+                <br />
+                <div id="viewComments">
+                    <div id="addEventNames"></div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
