@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet" />
+
+    <!-- Include Css File  -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link rel="stylesheet" href="css/header.css" />
+    <!-- Script File -->
+    <script src="/scripts/index.js"></script>
+
+    <!-- bootstrap script -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="bg">
+        <!-- Header Part -->
+        <div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="logo-title">
+                        <span class="navbar-brand">ScriBBler</span>
+                        <br />
+                        <span class="logo-tag">Explore Imagine Create</span>
+                    </div>
+
+                    <div class="justify-content-end" id="navbarNav">
+                        <button type="button" class="btn" style="color: white; background-color: blue"
+                            data-toggle="modal" data-target="#signinModal" data-backdrop='static' data-keyboard='false'>
+                            Sign In
+                        </button>
+
+                        <button type="button" class="btn" style="color: white; background-color: blue"
+                            data-toggle="modal" data-target="#signupModal" data-backdrop='static' data-keyboard='false'>
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Signin modal -->
+            <!-- modal on Sigin In Button click -->
+            <!-- Modal -->
+            <div class="modal fade" id="signinModal" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
+                    <!-- Modal content-->
+                    <div class="modal-content modal-font">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                            <h2 class="modal-title text-center modal-font">Welcome Back!</h2>
+                            <hr>
+
+                            <div class="modal-body">
+                                <form style="margin: 15px;">
+                                    <div class="form-group " style="font-family: Josefin Sans">
+                                        <label for="exampleInputEmail1 ">Username</label>
+                                        <input type="text" class="form-control" id="exampleInputloginEmail1"
+                                            required="true" style="background-color: rgb(223, 215, 215);"
+                                            aria-describedby="emailHelp" placeholder="Enter Username">
+
+                                    </div>
+                                    <div class="form-group " style="font-family: Josefin Sans">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputloginPassword"
+                                            required="true"
+                                            style="background-color: rgb(223, 215, 215);font-family: Josefin Sans"
+                                            placeholder="Enter Password">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default btn-block"
+                                        style="background-color: #0ec038; color: white;">
+                                        Sign In
+                                    </button>
+                                    <div>
+                                        <h4 class="text-center" style="padding: 5px;font-family: Josefin Sans">Not a
+                                            member?
+                                            <span style="color: blue;" data-toggle="modal" data-target="#signupModal"
+                                                data-backdrop='static' data-keyboard='false'>Sign Up</span>
+                                        </h4>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup modal -->
+            <!-- modal on Sign Up Button click -->
+            <!-- Modal -->
+            <div class="modal fade" id="signupModal" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
+                    <!-- Modal content-->
+                    <div class="modal-content modal-font">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                            <h2 class="modal-title text-center">Get Started</h2>
+                            <hr>
+
+                            <div class="modal-body">
+                                <form style="margin: 15px;">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Full Name</label>
+                                        <input type="text" class="form-control" id="exampleInputName" required="true"
+                                            style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                                            placeholder="Enter Full Name">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Username</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail" required="true"
+                                            style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                                            placeholder="Enter Username">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword"
+                                            required="true" style="background-color: rgb(223, 215, 215);"
+                                            placeholder="Enter Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Confirm Password</label>
+                                        <input type="password" class="form-control" id="exampleInputcPassword"
+                                            required="true" style="background-color: rgb(223, 215, 215);"
+                                            placeholder="Confirm Password">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default btn-block" required="true"
+                                        style="background-color: #0ec038; color: white;">
+                                        Sign Up
+                                    </button>
+
+
+                                </form>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End Part -->
+        <!-- Create Post and All Post Button -->
+        <div class="centre-button">
+            <button type="button" class="btn btn-warning" style="
+            margin: 5px;
+            color: black;
+            background-color: #f0ad4e;
+            border-color: #f0ad4e;" onclick=AllPost()>
+                All Posts
+            </button>
+
+            <button type="button" class="btn btn-warning" style="margin: 5px; color: black; background-color: #f0ad4e"
+                data-toggle="modal" data-target="#createModal" data-backdrop='static' data-keyboard='false'>
+                Create Post
+            </button>
+        </div>
+        <!-- modal on create post click -->
+        <!-- Modal -->
+        <div class="modal fade" id="createModal" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <!-- Modal content-->
+                <div class="modal-content modal-font">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                        <h2 class="modal-title text-center">Pen Your Post</h2>
+
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Title:</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" id="titlePost"
+                                style="background-color: rgb(223, 215, 215);" aria-describedby="inputGroup-sizing-sm" />
+                        </div>
+                        <div style="margin-top: 10px; margin-bottom: 5px" class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Content:</span>
+
+                            <div>
+                                <textarea class="form-control" id="contentPost" aria-label="Sizing example input"
+                                    style="background-color: rgb(223, 215, 215);"
+                                    aria-describedby="inputGroup-sizing-lg" rows="20" cols="100" name="comment"
+                                    form="userform"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-default " data-dismiss="modal"
+                                style="background-color: #0ec038; color: white;">
+                                Create
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
