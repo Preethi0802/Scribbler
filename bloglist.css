@@ -1,0 +1,82 @@
+.body {
+  background-color: orange;
+  height: 510px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CSS For Post Cards*/
+
+.ListOfPost {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: orange;
+}
+
+.Post {
+  background-color: white;
+  display: flex;
+  height: 170px;
+  box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
+    0 4px 20px 0 rgba(79, 19, 97, 0.19);
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.PostAuthorName {
+  display: flex;
+  float: left;
+  background-color: white;
+  align-items: center;
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 15%;
+}
+
+.postTitle {
+  font-weight: 700;
+  font-size: 130%;
+}
+
+.PostButton {
+  width: 100%;
+  display: flex;
+  float: right;
+  background-color: #f0f0f0;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid #f0f0f0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+.postUsername {
+  font-weight: 500;
+}
+.postDesccription {
+  overflow: hidden;
+}
+
+.PostButton span i {
+  float: right;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
