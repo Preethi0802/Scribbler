@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+#postSection {
+  text-align: center;
+  margin: 100px;
+}
+
+#postSection h1 {
+  color: black;
+  font-style: bold;
+  text-align: center;
+}
+
+#postSection button {
+  background-color: rgb(213, 14, 100);
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+#postSection #paraText {
+  background-color: white;
+  color: black;
+  text-align: justify;
+}
+
+#postSection input {
+  padding: 10px;
+  width: 30%;
+}
+
+#name {
+  background-color: white;
+  color: black;
+}
+
+.likeCommentSection {
+  text-align: left;
+}
+
+.dot-icon {
+  width: 100px;
+}
+#viewComments {
+  width: 100%;
+  background-color: darkgray;
+  padding: 10px;
+  visibility: hidden;
+  margin-bottom: 30px;
+}
